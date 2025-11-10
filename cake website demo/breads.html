@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #d69191;
+            padding: 10px 0px;
+            margin: 0%;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(77, 77, 77);
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        a:hover {
+            color: white;
+        }
+        li {
+
+            font-size: 20px;
+            padding: 10px 88px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            padding: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h2 {
+            font-size: 25px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container2 {
+            position: absolute;
+            top: 65%;
+            left: 18%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 300px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container2:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        #cake1 {
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgb(172, 153, 153);
+            width: 135px;
+            height: 140px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        #cake1:hover {
+            transform: scale(1.03);
+        }
+
+        .cake-title {
+            font-size: 24px;
+            color: #d65757;
+            margin: 10px 0 10px 0;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .cake-price {
+            font-size: 20px;
+            color: #ac3333;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .cake-description {
+            color: #676060;
+            line-height: 1.6;
+            margin: 10px 0;
+            padding: 0 15px;
+        }
+
+        .container3 {
+            position: absolute;
+            top: 65%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 320px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container3:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container4 {
+            position: absolute;
+            top: 65%;
+            left: 83%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 300px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container4:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container5 {
+            position: absolute;
+            top: 131%;
+            left: 18%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 300px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container5:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container6 {
+            position: absolute;
+            top: 131%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 317px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container6:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container7 {
+            position: absolute;
+            top: 131%;
+            left: 83%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 300px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(192, 91, 91);
+            background-color: rgb(254, 209, 209);
+            border-style: solid;
+            border-color: #676060;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(23, 23, 23, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container7:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 6px 20px rgba(236, 188, 188, 0.15);
+        }
+ 
+        .menu-section {
+
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+            background-color: rgb(247, 213, 207);
+
+        }
+
+        .dropdown {
+            position: relative;
+            padding: 3px 10px;
+        }
+        .dropbtn {
+            background-color: #d69191;
+            border: none;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropbtn:hover {
+            color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c4abab;
+            width: 190px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 6px;
+        }
+        .dropdown-content li {
+            display:inline-block;
+            color: white;
+            padding: 1px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+            cursor: pointer;
+        }
+
+        .dropdown.show .dropdown-content {
+            display:block;
+           
+
+        }
+
+        .menu-list1 {
+            list-style-type: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-list1 li {
+            padding: 8px 12px;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(53, 52, 52);
+        }
+
+        .menu-list1 li:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            top: 180%;
+            left: 1%;
+            width: 98%;
+            padding: 1px;
+            background-color: #f3abab;
+            color: rgb(66, 64, 64);
+            border-top: 2px solid #d88282;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <img src="heart.png" width="30px" id="image">
+                <h1>Patisserie</h1><img src="heart.png" width="30px" id="image">
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+    </nav>
+    <h2>✨ Our Menu ✨</h2>
+    <nav>
+        <ul class="dropdown">
+            <li class="dropdown">
+               <a href="cakes.html"><span class="dropbtn">Cakes ▾</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Chocolate Cake</a>
+                    <a href="#">Vanilla Cake</a>
+                    <a href="#">Strawberry Cake</a>
+                    <a href="#">Red Velvet Cake</a>
+                    <a href="#">Lemon Cake</a>
+                    <a href="#">Coffee Cake</a>
+                    <a href="#">Carrot Cake</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="pastries.html"><span class="dropbtn">Pastries ▾</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Chocolate Pastry</a>
+                    <a href="#">Black Forest</a>
+                    <a href="#">Truffle Pastry</a>
+                    <a href="#">Fruit Pastry</a>
+                    <a href="#">Blueberry Pastry</a>
+                </div>
+            </li>
+            <li class="dropdown">
+               <a href="breads.html"><span class="dropbtn">Breads ▾</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Sourdough</a>
+                    <a href="#">Baguettes</a>
+                    <a href="#">Whole Wheat</a>
+                    <a href="#">Focaccia</a>
+                    <a href="#">Rye Bread</a>
+                    <a href="#">Ciabatta</a>
+                    <a href="#">Multigrain</a>s
+                </div>
+       
+        </li>
+        <li class="dropdown">
+          <a href="cupcakes.html"><span class="dropbtn">Cupcakes ▾</span></a>
+            <div class="dropdown-content">
+                <a href="#">Red Velvet Cupcake</a>
+                <a href="#">Chocolate Cupcake</a>
+                <a href="#">Vanilla Cupcake</a>
+                <a href="#">Lemon Cupcake</a>
+            </div>
+        </li>
+        <li class="dropdown">
+          <a href="cookies.html"><span class="dropbtn">Cookies ▾</span></a>
+            <div class="dropdown-content">
+                <a href="#">Chocolate Chip Cookie</a>
+                <a href="#">Oatmeal Raisin Cookie</a>
+                <a href="#">Peanut Butter Cookie</a>
+                <a href="#">Sugar Cookie</a>
+            </div>
+        </li>
+        </ul>
+    </nav>
+    </section>
+    </div>
+
+
+
+    <div class="container2">
+        <img src="Basic Sourdough Bread for Beginners.jpeg" id="cake1">
+        <h3 class="cake-title ">Sourdough Bread 🍰</h3>
+        <div class="cake-price">$25.99</div>
+        <p class="cake-description">
+            Traditional sourdough bread with a tangy flavor and chewy crust.
+            Made using natural fermentation for a healthier option.
+        </p>
+    </div>
+
+    <div class="container3">
+        <img src="Whole Wheat Sandwich Bread with Seeds _ How To Make In Easiest Ways!.jpeg" id="cake1">
+        <h3 class="cake-title ">Whole Wheat Bread 🍰</h3>
+        <div class="cake-price">$28.99</div>
+        <p class="cake-description">
+            Nutritious whole wheat bread packed with fiber and essential nutrients.
+            Perfect for sandwiches and toasting.
+        </p>
+    </div>
+
+    <div class="container4">
+        <img src="Classic French Baguette.jpeg" id="cake1">
+        <h3 class="cake-title ">Baguettes 🍰</h3>
+        <div class="cake-price">$22.99</div>
+        <p class="cake-description">
+            Crispy on the outside and soft on the inside, our classic French baguettes
+            are perfect for any meal or as a snack with butter and jam.
+        </p>
+    </div>
+    <div class="container5">
+        <img src="Focaccia Recipe - Recipes Glonfo.jpeg" id="cake1">
+        <h3 class="cake-title ">Focaccia 🍰</h3>
+        <div class="cake-price">$27.99</div>
+        <p class="cake-description">
+            Italian focaccia bread topped with olive oil, rosemary, and sea salt.
+            Soft and flavorful, ideal for sandwiches or as a side dish.
+        </p>
+    </div>
+    <div class="container6">
+        <img src="German Rye Bread (Roggenbrot).jpeg" id="cake1">
+        <h3 class="cake-title ">Rye Bread🍰</h3>
+        <div class="cake-price">$30.99</div>
+        <p class="cake-description">
+            Hearty rye bread with a dense texture and robust flavor.
+            Made with a blend of rye and wheat flours for a balanced taste.
+        </p>
+    </div>
+    <div class="container7">
+        <img src="Classic Homemade Ciabatta Bread.jpeg" id="cake1">
+        <h3 class="cake-title ">Ciabatta 🍰</h3>
+        <div class="cake-price">$26.99</div>
+        <p class="cake-description">
+            Soft and airy ciabatta bread with a crisp crust.
+            Perfect for sandwiches or dipping in olive oil.
+        </p>
+    </div>
+ 
+
+    <footer>
+        <p>© 2024 Patisserie. All rights reserved.</p>
+
+    </footer>
+    <script src="menu.js"></script>
+
+
+
+</body>
+
+</html>
